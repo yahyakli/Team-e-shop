@@ -1,4 +1,3 @@
-import { AiTwotoneFire } from "react-icons/ai"; 
 import React, { useEffect, useState } from 'react'
 import { useForm } from "react-hook-form";
 import { z } from "zod";
