@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Logo from '../assets/fire.svg';
-import Shop_img from '../assets/shop.jpg';
 import { Link, redirect, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
