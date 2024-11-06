@@ -34,8 +34,8 @@ const Detail_product = () => {
         There are many variations of passages of Electroniques products available but the majority have suffered alteration in some form.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition cursor-pointer">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 ">
+        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition cursor-pointer pb-[5px]">
           <img
             className="w-full h-56 object-cover rounded-t-lg"
           />
@@ -54,9 +54,12 @@ const Detail_product = () => {
               <span className="text-gray-500 ml-2 text-sm">5.00 Rating</span>
             </div>
           </div>
+          <div className='flex justify-center'>
+            <button className="btn btn-xs  p-2 rounded-md text-white hover:bg-orange-700" style={{backgroundColor: "rgb(234, 114, 39)"}}>Add To Card</button>
+          </div>
         </div>
 
-        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition">
+        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition cursor-pointer pb-[5px]">
           <img
             src="path-to-backpack-image"
             className="w-full h-56 object-cover rounded-t-lg"
@@ -73,9 +76,12 @@ const Detail_product = () => {
               <span className="text-gray-500 ml-2 text-sm">4.00 Rating</span>
             </div>
           </div>
+          <div className='flex justify-center'>
+            <button className="btn btn-xs   p-2 rounded-md text-white hover:bg-orange-700" style={{backgroundColor: "rgb(234, 114, 39)"}}>Add To Card</button>
+          </div>
         </div>
 
-        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition cursor-pointer">
+        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition cursor-pointer pb-[5px] ">
           <img
             src="path-to-wallet-image"
            
@@ -93,9 +99,12 @@ const Detail_product = () => {
               <span className="text-gray-500 ml-2 text-sm">5.00 Rating</span>
             </div>
           </div>
+          <div className='flex justify-center'>
+            <button className="btn btn-xs   p-2 rounded-md text-white hover:bg-orange-700" style={{backgroundColor: "rgb(234, 114, 39)"}}>Add To Card</button>
+          </div>
         </div>
 
-        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition cursor-pointer">
+        <div className="relative bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition cursor-pointer pb-[5px]">
           <img
             src="path-to-tshirt-image"
             className="w-full h-56 object-cover rounded-t-lg"
@@ -111,6 +120,9 @@ const Detail_product = () => {
               </div>
               <span className="text-gray-500 ml-2 text-sm">5.00 Rating</span>
             </div>
+          </div>
+          <div className='flex justify-center '>
+            <button className="btn btn-xs  p-2 rounded-md text-white hover:bg-orange-700" style={{backgroundColor: "rgb(234, 114, 39)"}}>Add To Card</button>
           </div>
         </div>
       </div>
