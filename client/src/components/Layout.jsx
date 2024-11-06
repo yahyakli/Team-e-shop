@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa"; 
 import { IoIosNotifications } from "react-icons/io"; 
 import { AiOutlineUser } from "react-icons/ai"; 
+import logo from "../assets/logo.png";
 import React from 'react';
 import { Link, Outlet } from "react-router-dom";
-
 const data = []
 
 function Layout() {
@@ -51,10 +51,10 @@ function Layout() {
         backgroundColor: "var(--background-color)",
         color: "var(--text-color)"
       }}>
-      <header className="p-3 py-4 shadow-md mb-3 header bg-black text-white">
+      <header className=" shadow-md mb-3 header bg-black text-white h-[120px] items-center ">
         <nav className="flex items-center justify-between">
-          <Link to={'/'} className="logo flex items-end">
-            <p className="font-semibold text-orange-500" style={{fontSize:"20px"}}>E-Shop<span></span></p>
+          <Link to={`/`} className="logo flex items-end object-">
+            <p><img className="w-[130px] h-[120px]" src={logo}></img></p>
           </Link>
           <div className="search flex items-center ring-inset ring-1 ring-gray-300 bg-transparent py-2 pl-5 pr-3 rounded-full">
             <input 
