@@ -11,7 +11,7 @@ const Card = () => {
       <div className="content">
         <h1 className='text-orange-500 font-semibold' style={{fontSize:"24px"}}>Name</h1>
         <p className='w-full text-black' style={{ wordBreak: 'break-word' }}>
-          gggggggggggggggggggggggggggggggggjfdskfjkjfkdsjfkjdskfjdsfdsjfksjg...
+          description
         </p>
         <p className='py-2 font-semibold text-black' style={{fontSize:"24px"}}>100$</p>
         <Link to={'/details_product/id'}>
