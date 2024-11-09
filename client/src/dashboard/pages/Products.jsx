@@ -42,7 +42,7 @@ const Products = () => {
               <td className={`${thdStyle}`}>
                 <div className='flex items-center justify-center gap-3'>
                   <Link to={'/dashboard/createProduct'} className='bg-green-600 rounded-md p-2 text-white'>Create</Link>
-                  <Link to={'/dashboard/updateProduct'} className='bg-blue-500 rounded-md p-2 text-white'>Update</Link>
+                  <Link to={'/dashboard/updateProduct/2'} className='bg-blue-500 rounded-md p-2 text-white'>Update</Link>
                   <button onClick={handleDeleteProduct} className='bg-red-600 rounded-md p-2 text-white'>Delete</button>
                 </div>
               </td>

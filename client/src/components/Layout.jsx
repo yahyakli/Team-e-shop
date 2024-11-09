@@ -13,8 +13,8 @@ import { Link, Outlet } from "react-router-dom";
 const data = []
 
 function Layout() {
-  const dispatch = useDispatch();
-  const navigate = useNavigate()
+  // const dispatch = useDispatch();
+  // const navigate = useNavigate()
   // Initialize theme from localStorage or default to light
   const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.getItem('theme') === 'dark';
