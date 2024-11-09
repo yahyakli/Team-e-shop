@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
+import cors from 'cors'
 import productRoutes from './routes/productRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import cartRoutes from './routes/cartRoutes.js';
@@ -10,6 +11,8 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
+
+app.use(cors());
 
 // Use routes
 app.use('/api', productRoutes);

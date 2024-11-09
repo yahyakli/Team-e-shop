@@ -25,7 +25,7 @@ const Register = () => {
 
   const postData = async (data) => {
     try {
-      const response = await axios.post("", data);
+      const response = await axios.post("http://localhost:3000/api/signup", data);
       console.log(response.data);
       // Navigate to the login page after successful registration
       navigate('/login');

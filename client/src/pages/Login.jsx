@@ -4,6 +4,8 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, redirect, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { login } from '../redux/slices/user-slice';
 
 
 const schema = z.object({
@@ -14,17 +16,17 @@ const schema = z.object({
 const Login = () => {
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [statusRes, setStatusRes] = useState()
 
   const postData = async (data) => {
     try {
-      const response = await axios.post("", data);
-      const token = response?.data?.token;
-      
+      const response = await axios.post("http://localhost:3000/api/login", data);
+      const token = response?.data?.user;
       if (token) {
-        localStorage.setItem('auth_token', token);
-        navigate('/'); // Only navigate after successful login
+        dispatch(login(token)); // Dispatch the login action with token
+        navigate('/'); // Redirect to home after login
       }
     } catch (err) {
       setStatusRes(err.message || "Login failed");
