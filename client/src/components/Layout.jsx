@@ -8,10 +8,8 @@ import { AiOutlineUser } from "react-icons/ai";
 import location from "../assets/location.svg"
 import logo from "../assets/logo.png";
 import React from 'react';
-import { Link, Outlet, useNavigate } from "react-router-dom";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import { useDispatch } from "react-redux";
-import { logout } from "../redux/slices/user-slice";
+import { Link, Outlet } from "react-router-dom";
+
 const data = []
 
 function Layout() {
@@ -85,19 +83,9 @@ function Layout() {
                 {isDarkMode ? <CiLight size={25} /> : <MdOutlineDarkMode size={25} />}
               </button>
             </div>
-            {auth_token ? (
-              <button className="btn-style" onClick={()=>{
-                dispatch(logout())
-                navigate('/login')
-              }} >Logout</button>
-            )
-            : (
-              <div className="gap-2 flex">
-                <Link to={'/login'} className="btn-style" >Login</Link>
-                <Link to={'/register'} className="btn-style">Register</Link>
-              </div>
-            )}
-            <Link to={'/cart'} className="cart bg-icon relative mr-2">
+            <Link to={'/login'} className="btn-style" >Login</Link>
+            <Link to={'/register'} className="btn-style">Register</Link>
+            <Link to={'/cart'} className="cart bg-icon relative">
               <FaShoppingCart size={25} aria-label="Shopping Cart" />
               <span 
                 className="count-not rounded-full bg-red-600 w-4 h-4  flex items-center justify-center text-white absolute top-0 right-0" 
